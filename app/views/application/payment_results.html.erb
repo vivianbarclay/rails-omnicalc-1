@@ -1,0 +1,24 @@
+
+<h1>Payment Results</h1>
+
+<body>
+  APR<br>
+  <span style="margin-left: 40px;"><%= @formatted_apr %></span>
+</body><br>
+
+<body>
+  Number of years<br>
+  <span style="margin-left: 40px;"><%= @years %></span>
+</body><br>
+
+<body>
+  Principal<br>
+  <span style="margin-left: 40px;"><%= @formatted_principal %></span>
+</body><br>
+
+<body>
+  Payment<br>
+  <span style="margin-left: 40px;"><%= @formatted_payment %></span>
+</body><br>
+<br>
+<%= link_to "Calculate another payment", new_payment_path %>

@@ -1,0 +1,15 @@
+<%= form_with url: random_results_path, method: :get do %>
+  <body>
+    <label for="minimum">Minimum</label>
+    <%= text_field_tag :minimum, nil, placeholder: "E.g. 1.5" %>
+  </body><br>
+
+  <body>
+    <label for="maximum">Maximum</label>
+    <%= text_field_tag :maximum, nil, placeholder: "E.g. 4.5" %>
+  </body><br>
+
+  <body>
+    <%= button_tag "Pick random number", type: "submit" %>
+  </body>
+<% end %>

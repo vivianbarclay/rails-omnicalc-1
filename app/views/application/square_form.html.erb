@@ -1,0 +1,10 @@
+
+
+<%= form_with url: square_results_path, method: :get do %>
+ <label for="number">Enter a number</label><br>
+  <%= text_field_tag :number, nil, placeholder: "What number do you want to take the square of?" %>
+  
+  <br>
+  
+  <%= button_tag "Calculate square", type: "submit" %>
+<% end %>

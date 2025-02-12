@@ -1,0 +1,13 @@
+
+<%= form_with url: square_root_results_path, method: :get do %>
+  
+    <body>
+    <label for="number">Enter a number</label>
+    <%= text_field_tag :number, nil, placeholder: "What number do you want to take the square root of?" %>
+  </body><br>
+
+    <body>
+    <%= button_tag "Calculate square root", type: "submit" %>
+  </body>
+
+<% end %>

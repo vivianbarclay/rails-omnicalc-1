@@ -1,0 +1,20 @@
+
+<h1>Random Results</h1>
+
+<body>
+  Minimum<br>
+  <span style="margin-left: 40px;"><%= @minimum %></span>
+</body><br>
+
+<body>
+  Maximum<br>
+  <span style="margin-left: 40px;"><%= @maximum %></span>
+</body><br>
+
+<body>
+  Random Number<br>
+  <span style="margin-left: 40px;"><%= @random %></span>
+</body><br>
+
+<br>
+<%= link_to "Pick another random number", new_random_path %>
